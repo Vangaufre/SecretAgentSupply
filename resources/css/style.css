@@ -1,0 +1,257 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-container {
+  width:960px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width:960px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin: 0.66rem;
+}
+
+.logo h1 {
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: white;
+  margin: 0.66rem;
+  text-transform: uppercase;
+}
+
+.moto {
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/moto.jpeg");
+  background-size: cover;
+  width: 100%;
+  height: 25rem;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  background-color: black;
+  width:20rem;
+  margin-top: 9rem;
+  margin-bottom: 5rem;
+  padding: 2rem 3rem;
+}
+
+.text h2, h3 {
+  font-family: Helvetica;
+  color:white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+
+nav {
+  background: red;
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: firebrick;
+  padding-left: 100%;
+  padding-right: 100%;
+}
+
+nav .site-nav {
+  color: white;
+  padding: 0.75rem;
+}
+
+.container-items {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.site-container, .items{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item {
+  color: black;
+  border: 4px solid black;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  width:30%;
+}
+
+.item img {
+  max-height: 9rem;
+  max-width:70%;
+}
+
+.img-container {
+  height: 9rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+}
+
+.info {
+  color: white;
+  margin-bottom: 4rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 35%;
+}
+
+p {
+  color: white;
+}
+
+.information {
+  background-color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.information span {
+  background-color: black;
+  display: block;
+}
+
+.information-v {
+  margin-top: 10px;
+}
+
+.information-v p{
+  color:black;
+}
+
+.footer {
+  color: white;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.footer-container {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+@media only screen and (max-width:1024px) {
+  .text {
+    font-size: 2rem;
+  }
+  #desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+    justify-content: center;
+  }
+  #three {
+    display: none;
+  }
+  #images {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .mobile-nav {
+    display: none;
+  }
+  #desktop-nav {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width:470px) {
+  .moto {
+    height:15rem;
+  }
+  .text {
+    margin-top: 15rem;
+    padding: 1rem 4rem;
+  }
+  h2 {
+    font-family: Helvetica;
+    font-size:0.77rem;
+    font-weight: bold;
+  }
+  h3 {
+    font-family: Helvetica;
+    font-size:1rem;
+    font-weight: bold;
+  }
+
+  #one {
+    width:90%;
+  }
+
+  #two {
+    display: none;
+  }
+  #three {
+    display: none;
+  }
+  .info {
+    display: block;
+    flex-direction: column;
+  }
+}
