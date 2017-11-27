@@ -206,9 +206,16 @@ p {
   #three {
     display: none;
   }
-  #images {
+  .container-items{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  #one {
+    width: 47%;
+  }
+  #two {
+    width: 47%;
   }
   .logo {
     width: 100%;
@@ -257,6 +264,9 @@ p {
     font-family: Helvetica;
     font-size:1rem;
     font-weight: bold;
+  }
+  #one {
+    width: 90%;
   }
   #two {
     display: none;
