@@ -283,4 +283,7 @@ p {
   .footer .site-container {
     flex-direction: column;
   }
+  .site-container {
+    justify-content: center;
+  }
 }
