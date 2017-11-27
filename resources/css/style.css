@@ -208,7 +208,19 @@ p {
   }
   #images {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+  }
+  .logo {
+    width: 100%;
+  }
+  .info .site-container {
+    justify-content: space-around;
+  }
+  .details {
+    width: 35%;
+  }
+  .footer .site-container {
+    flex-direction: column;
   }
 }
 
@@ -226,8 +238,15 @@ p {
     height:15rem;
   }
   .text {
-    margin-top: 15rem;
-    padding: 1rem 4rem;
+    margin-top: 10rem;
+    margin-bottom: 0rem;
+  }
+  h1{
+    display: none;
+  }
+  .logo {
+    width: 100%;
+    justify-content: center;
   }
   h2 {
     font-family: Helvetica;
@@ -239,19 +258,19 @@ p {
     font-size:1rem;
     font-weight: bold;
   }
-
-  #one {
-    width:90%;
-  }
-
   #two {
     display: none;
   }
   #three {
     display: none;
   }
-  .info {
-    display: block;
+  .info .site-container {
+    flex-direction: column;
+  }
+  .details {
+    padding: 1rem;
+  }
+  .footer .site-container {
     flex-direction: column;
   }
 }
